@@ -31,7 +31,7 @@ namespace Calculator.Tests
 
             int result = _calculator.Subtraction(a, b);
 
-            Assert.AreEqual(6, result, "Âû÷èòàíèå äîëæíî âîçâðàùàòü ïðàâèëüíóþ ðàçíèöó.");
+            Assert.AreEqual(6, result, "Вычитание должно возвращать правильную разницу.");
         }
 
         [Test]
@@ -42,7 +42,7 @@ namespace Calculator.Tests
 
             int result = _calculator.Miltiplication(a, b);
 
-            Assert.AreEqual(42, result, "Óìíîæåíèå äîëæíî âîçâðàùàòü ïðàâèëüíîå ïðîèçâåäåíèå.");
+            Assert.AreEqual(42, result, "Умножение должно возвращать правильное произведение.");
         }
 
         [Test]
@@ -53,7 +53,7 @@ namespace Calculator.Tests
 
             int result = _calculator.Division(a, b);
 
-            Assert.AreEqual(4, result, "Äåëåíèå äîëæíî âåðíóòü ïðàâèëüíîå ÷àñòíîå.");
+            Assert.AreEqual(4, result, "Деление должно вернуть правильное частное.");
         }
 
         [Test]
@@ -62,7 +62,7 @@ namespace Calculator.Tests
             int a = 10;
             int b = 0;
 
-            Assert.Throws<System.DivideByZeroException>(() => _calculator.Division(a, b), "Äåëåíèå íà íîëü äîëæíî âûçâàòü èñêëþ÷åíèå.");
+            Assert.Throws<System.DivideByZeroException>(() => _calculator.Division(a, b), "Деление на ноль должно вызвать исключение.");
         }
     }
 }
