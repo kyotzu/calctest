@@ -20,7 +20,7 @@ namespace Calculator.Tests
 
             int result = _calculator.Additional(a, b);
 
-            Assert.AreEqual(8, result, "Сложение должно возвращать правильную сумму.");
+            Assert.AreEqual(8, result, "РЎР»РѕР¶РµРЅРёРµ РґРѕР»Р¶РЅРѕ РІРѕР·РІСЂР°С‰Р°С‚СЊ РїСЂР°РІРёР»СЊРЅСѓСЋ СЃСѓРјРјСѓ.");
         }
 
         [Test]
@@ -31,7 +31,7 @@ namespace Calculator.Tests
 
             int result = _calculator.Subtraction(a, b);
 
-            Assert.AreEqual(6, result, "Вычитание должно возвращать правильную разницу.");
+            Assert.AreEqual(6, result, "Г‚Г»Г·ГЁГІГ Г­ГЁГҐ Г¤Г®Г«Г¦Г­Г® ГўГ®Г§ГўГ°Г Г№Г ГІГј ГЇГ°Г ГўГЁГ«ГјГ­ГіГѕ Г°Г Г§Г­ГЁГ¶Гі.");
         }
 
         [Test]
@@ -42,7 +42,7 @@ namespace Calculator.Tests
 
             int result = _calculator.Miltiplication(a, b);
 
-            Assert.AreEqual(42, result, "Умножение должно возвращать правильное произведение.");
+            Assert.AreEqual(42, result, "Г“Г¬Г­Г®Г¦ГҐГ­ГЁГҐ Г¤Г®Г«Г¦Г­Г® ГўГ®Г§ГўГ°Г Г№Г ГІГј ГЇГ°Г ГўГЁГ«ГјГ­Г®ГҐ ГЇГ°Г®ГЁГ§ГўГҐГ¤ГҐГ­ГЁГҐ.");
         }
 
         [Test]
@@ -53,7 +53,7 @@ namespace Calculator.Tests
 
             int result = _calculator.Division(a, b);
 
-            Assert.AreEqual(4, result, "Деление должно вернуть правильное частное.");
+            Assert.AreEqual(4, result, "Г„ГҐГ«ГҐГ­ГЁГҐ Г¤Г®Г«Г¦Г­Г® ГўГҐГ°Г­ГіГІГј ГЇГ°Г ГўГЁГ«ГјГ­Г®ГҐ Г·Г Г±ГІГ­Г®ГҐ.");
         }
 
         [Test]
@@ -62,7 +62,7 @@ namespace Calculator.Tests
             int a = 10;
             int b = 0;
 
-            Assert.Throws<System.DivideByZeroException>(() => _calculator.Division(a, b), "Деление на ноль должно вызвать исключение.");
+            Assert.Throws<System.DivideByZeroException>(() => _calculator.Division(a, b), "Г„ГҐГ«ГҐГ­ГЁГҐ Г­Г  Г­Г®Г«Гј Г¤Г®Г«Г¦Г­Г® ГўГ»Г§ГўГ ГІГј ГЁГ±ГЄГ«ГѕГ·ГҐГ­ГЁГҐ.");
         }
     }
 }
